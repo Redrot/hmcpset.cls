@@ -120,7 +120,6 @@
 }{%
   \mbox{}\penalty10000\hfill\hmcpset@endmark%
   \end{trivlist}%
-  \newpage
 }
 
 % default endmark is small black square
