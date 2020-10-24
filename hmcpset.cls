@@ -155,3 +155,12 @@
 \newcommand{\assignment}[1]{\def\hmcpset@assignment{#1}}
 \newcommand{\duedate}[1]{\def\hmcpset@duedate{#1}}
 \newcommand{\extraline}[1]{\def\hmcpset@extraline{#1}}
+
+% add other custom commands here
+\newcommand{\Z}{\mathbb{Z}}
+\newcommand{\R}{\mathbb{R}}
+\newcommand{\C}{\mathbb{C}}
+\newcommand{\Q}{\mathbb{Q}}
+\newcommand{\N}{\mathbb{N}}
+\newcommand{\Hom}{\text{Hom}}
+\newcommand{\Aut}{\text{Aut}}
