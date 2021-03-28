@@ -15,8 +15,15 @@
 \usepackage{tikz-cd}
 \usepackage{mdwlist}
 %\usepackage{bbold}
+\usepackage{hyperref}
+\hypersetup{
+    colorlinks=true, %set true if you want colored links
+    linktoc=all,     %set to all if you want both sections and subsections linked
+    linkcolor=blue,  %choose some color if you want links to stand out
+}
 \setlist[enumerate]{label=(\alph*)}
 \setlength{\parindent}{0pt}
+
 
 % add other custom commands here
 \newcommand{\Z}{\mathbb{Z}}
@@ -40,6 +47,8 @@
 \newcommand{\Exer}{\textbf{Exercise: }}
 \newcommand{\Ex}{\textbf{Example: }}
 \newcommand{\Remark}{\textbf{Remark: }}
+\newcommand{\Thm}{\textbf{Theorem: }}
+\newcommand{\Solution}{\textit{Solution: }}
 
 % include this if you want to import graphics files with /includegraphics
 \usepackage{graphicx}
