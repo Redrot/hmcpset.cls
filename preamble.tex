@@ -21,6 +21,9 @@
     linktoc=all,     %set to all if you want both sections and subsections linked
     linkcolor=blue,  %choose some color if you want links to stand out
 }
+\usepackage[colorinlistoftodos]{todonotes}
+\usepackage[notref,notcite]{showkeys}
+
 \setlist[enumerate]{label=(\alph*)}
 \setlength{\parindent}{0pt}
 
@@ -46,6 +49,8 @@
 \newcommand{\rk}{\operatorname{rk}}
 \newcommand{\colim}{\operatorname{colim}}
 \newcommand{\coker}{\operatorname{coker}}
+\newcommand{\id}{\operatorname{id}}
+\newcommand{\im}{\operatorname{im}}
 % \renewcommand{\ker}{\operatorname{ker}}
 \newcommand{\Mor}{\operatorname{Mor}}
 \newcommand{\ind}{\operatorname{ind}}
@@ -57,17 +62,28 @@
 \newcommand{\Hom}{\operatorname{Hom}}
 \newcommand{\Aut}{\operatorname{Aut}}
 
-% For expository writing
-\newcommand{\Def}{\textbf{Definition: }}
-\newcommand{\Exer}{\textbf{Exercise: }}
-\newcommand{\Ex}{\textbf{Example: }}
-\newcommand{\Remark}{\textbf{Remark: }}
-\newcommand{\Thm}{\textbf{Theorem: }}
-\newcommand{\Solution}{\textit{Solution: }}
-\newcommand{\Note}{\textbf{Note: }}
+\newcommand{\Ob}{\operatorname{Ob}}
+\newcommand{\Mat}{\operatorname{Mat}}
+\newcommand{\iden}{\operatorname{id}}
+\newcommand{\End}{\operatorname{End}}
+\newcommand{\op}{\operatorname{op}}
+\newcommand{\Res}{\operatorname{Res}}
+\newcommand{\Ind}{\operatorname{Ind}}
+\newcommand{\Inf}{\operatorname{Inf}}
+\newcommand{\Def}{\operatorname{Def}}
+\newcommand{\Iso}{\operatorname{Iso}}
+\newcommand{\Id}{\operatorname{Id}}
+\newcommand{\cone}{\operatorname{cone}}
 
-\renewcommand{\implies}{\Rightarrow}
-\renewcommand{\iff}{\Leftrightarrow}
+\theoremstyle{definition}
+\newtheorem{theorem}{Theorem}[subsection]
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{prop}[theorem]{Proposition}
+\newtheorem{definition}[theorem]{Definition}
+\newtheorem{remark}[theorem]{Remark}
+\newtheorem{example}[theorem]{Example}
+\newtheorem{corollary}[theorem]{Corollary}
+\newtheorem{exercise}[theorem]{Exercise}
 
 % include this if you want to import graphics files with /includegraphics
 \usepackage{graphicx}
