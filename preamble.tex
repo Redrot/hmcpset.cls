@@ -14,69 +14,66 @@
 \usepackage{relsize}
 \usepackage{tikz-cd}
 \usepackage{mdwlist}
-%\usepackage{bbold}
-\usepackage{hyperref}
+\usepackage{multicol}
+%\usepackage{mathabx}
+\usepackage{stmaryrd}
+\usepackage{float}
+\usepackage{adjustbox}
 \hypersetup{
     colorlinks=true, %set true if you want colored links
     linktoc=all,     %set to all if you want both sections and subsections linked
     linkcolor=blue,  %choose some color if you want links to stand out
 }
-\usepackage[colorinlistoftodos]{todonotes}
-\usepackage[notref,notcite]{showkeys}
 
+%\usepackage{bbold}
 \setlist[enumerate]{label=(\alph*)}
-\setlength{\parindent}{0pt}
-
-
+%\setlength{\parindent}{0pt}
+\renewcommand{\baselinestretch}{1.15}
+% \renewcommand{\qedsymbol}{$\blacksquare$}
+\usetikzlibrary{graphs,decorations.pathmorphing,decorations.markings}
+\tikzcdset{scale cd/.style={every label/.append style={scale=#1},
+    cells={nodes={scale=#1}}}}
+    
 % add other custom commands here
-
-% Commonly used matbbs
 \newcommand{\Z}{\mathbb{Z}}
 \newcommand{\R}{\mathbb{R}}
 \newcommand{\C}{\mathbb{C}}
 \newcommand{\Q}{\mathbb{Q}}
 \newcommand{\N}{\mathbb{N}}
 \newcommand{\F}{\mathbb{F}}
-\newcommand{\RP}{\mathbb{R}P}
-\newcommand{\CP}{\mathbb{C}P}
-\newcommand{\sphere}{\mathbb{S}}
+\newcommand{\RP}{\mathbb{RP}}
+\newcommand{\CP}{\mathbb{CP}}
+\newcommand{\Hom}{\text{Hom}}
+\newcommand{\Aut}{\text{Aut}}
+\newcommand{\Div}{\text{div}}
 \newcommand{\bigO}{\mathcal{O}}
-
-% New operator names
+\newcommand{\disc}{\text{disc}}
+\newcommand{\Tr}{\text{Tr}}
+\newcommand{\rk}{\text{rk}}
+\newcommand{\sphere}{\mathbb{S}}
 \newcommand{\inv}{^{-1}}
-\newcommand{\disc}{\operatorname{disc}}
-\newcommand{\Tr}{\operatorname{Tr}}
-\newcommand{\rk}{\operatorname{rk}}
-\newcommand{\colim}{\operatorname{colim}}
-\newcommand{\coker}{\operatorname{coker}}
-\newcommand{\id}{\operatorname{id}}
-\newcommand{\im}{\operatorname{im}}
-% \renewcommand{\ker}{\operatorname{ker}}
-\newcommand{\Mor}{\operatorname{Mor}}
-\newcommand{\ind}{\operatorname{ind}}
-\newcommand{\res}{\operatorname{res}}
-\newcommand{\Gal}{\operatorname{Gal}}
-% \renewcommand{\char}{\operatorname{char}}
-\newcommand{\GL}{\operatorname{GL}}
-\newcommand{\SL}{\operatorname{SL}}
-\newcommand{\Hom}{\operatorname{Hom}}
-\newcommand{\Aut}{\operatorname{Aut}}
-
 \newcommand{\Ob}{\operatorname{Ob}}
+\newcommand{\Mor}{\operatorname{Mor}}
 \newcommand{\Mat}{\operatorname{Mat}}
-\newcommand{\iden}{\operatorname{id}}
 \newcommand{\End}{\operatorname{End}}
-\newcommand{\op}{\operatorname{op}}
+\newcommand{\op}{^{\operatorname{op}}}
 \newcommand{\Res}{\operatorname{Res}}
 \newcommand{\Ind}{\operatorname{Ind}}
 \newcommand{\Inf}{\operatorname{Inf}}
 \newcommand{\Def}{\operatorname{Def}}
 \newcommand{\Iso}{\operatorname{Iso}}
+\newcommand{\id}{\operatorname{id}}
 \newcommand{\Id}{\operatorname{Id}}
-\newcommand{\cone}{\operatorname{cone}}
+\newcommand{\Spl}{\operatorname{Spl}}
+\renewcommand{\O}{\mathcal{O}}
+\newcommand{\im}{\operatorname{im}}
+\newcommand{\D}{\mathcal{D}}
+\newcommand{\rank}{\operatorname{rank}}
+\newcommand{\TI}{\operatorname{Ten}}
+\newcommand{\stab}{\operatorname{stab}}
 
 \theoremstyle{definition}
-\newtheorem{theorem}{Theorem}[subsection]
+\newtheorem{theorem}{Theorem}[section]
 \newtheorem{lemma}[theorem]{Lemma}
 \newtheorem{prop}[theorem]{Proposition}
 \newtheorem{definition}[theorem]{Definition}
@@ -84,6 +81,4 @@
 \newtheorem{example}[theorem]{Example}
 \newtheorem{corollary}[theorem]{Corollary}
 \newtheorem{exercise}[theorem]{Exercise}
-
-% include this if you want to import graphics files with /includegraphics
-\usepackage{graphicx}
+\newtheorem*{theorem*}{Theorem}
